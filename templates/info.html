@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<title>formle</title>
+		<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/style_info.css') }}">
+        <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="header">
+        <form action="/" method="post">
+            <input type="submit" value="Back" class="newGame">
+        </form>
+        <h1 class="title">formle</h1>
+    </div>
+
+	<div class="main">
+		<h1>How to play</h1>
+        <p>Guess the phrase</p>
+        <p>The phrase is given with missing words.</p>
+        <p>Figure out the missing words based on their shape!</p>
+        <p>Ascending letters: "b", "d", "f", "h", "i", "k", "l", "t", will be displayed as "&#9608".</p>
+        <p>Descending letters: "g", "j", "p", "q", "y", will be displayed as "_".</p>
+        <p>All other letters are nuetral and will be displayed as "&#9604".</p>
+        <p>Example:</p>
+        <p class="example">&#9608&#9608'&#9604 the &#9604&#9608&#9604_&#9604 of &#9604 circle</p>
+        <p>it's the shape of a circle</p>
+	</div>
+</body>
+
+<script>
+</script>
+
+</html>

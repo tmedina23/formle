@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<title>formle</title>
+        <link rel="icon" href="{{ url_for('static',filename='icon.png') }}">
+		<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/style.css') }}">
+        <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="header">
+        <form action="/" method="post">
+            <input type="submit" value="New Game" class="newGame">
+        </form>
+        <h1 class="title">formle</h1>
+        <form action="/info" method="post">
+            <input type="submit" value="Info" class="info">
+        </form>
+    </div>
+
+	<div class="puzzle">
+		<p>{{ puzzle }}</p>
+	</div>
+	
+    <div class="result">
+        <p>{{ result }}</p>
+    </div>
+
+    <form action="/result" method="post">
+        <input type="submit" class="enter" value="Enter">
+        <div class="input">
+            <input type="text" name="guess" class="textbox" autocomplete="off" placeholder="__________________">
+        </div>
+    </form>
+</body>
+
+<script>
+</script>
+
+</html>
